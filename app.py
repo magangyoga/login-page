@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Konfigurasi halaman
-st.set_page_config(page_title="Login Dashboard Looker Studio", layout="wide")
+st.set_page_config(page_title="Login Dashboard Vandana", layout="wide")
 
 # ========= DATA USER ===========
 users = {
@@ -80,7 +80,7 @@ st.markdown("""
 
 # ========= FORM LOGIN ============
 if not st.session_state.logged_in:
-    st.title("🔐Login ke Dashboard Looker Studio")
+    st.title("🔐Login ke Dashboard Vandana")
     st.write("Masukkan username dan password anda!")
 
     with st.form("login_form"):
@@ -114,8 +114,9 @@ if st.session_state.logged_in:
     st.markdown(f"""
         <a href="{user_info['dashboard_url']}" target="_blank">
             <button style='font-size:20px;padding:12px 30px;border-radius:10px;background-color:#3399ff;color:white;border:none;'>
-                🚀 Buka Dashboard Looker Studio
+                🚀 Buka Dashboard Vandana
             </button>
         </a>
     """, unsafe_allow_html=True)
+
 
