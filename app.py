@@ -81,7 +81,7 @@ st.markdown("""
 # ========= FORM LOGIN ============
 if not st.session_state.logged_in:
     st.title("🔐Login ke Dashboard Looker Studio")
-    st.write("Masukkan username dan password dengan semangat cerah!")
+    st.write("Masukkan username dan password anda!")
 
     with st.form("login_form"):
         username = st.text_input("👤 Username").strip()
@@ -118,3 +118,4 @@ if st.session_state.logged_in:
             </button>
         </a>
     """, unsafe_allow_html=True)
+
